@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DApp Exercise</title>
+		<style>
+			*,
+			body {
+				background-color: #2c2c2c;
+				color: white;
+				font-family: "Space Mono";
+			}
+		</style>
+	</head>
+	<body>
+		<h1>This is my dApp!</h1>
+		<p>Here we can set or get the mood:</p>
+		<label for="mood">Input Mood:</label> <br />
+		<input type="text" id="mood" />
+		<div>
+			<button onclick="getMood()">get Mood</button>
+		</div>
+		<div>
+			<button onclick="setMood()">set Mood</button>
+		</div>
+		<div>
+			<h4>Mood: <span id="moodValue"></span></h4>
+		</div>
+		<script
+			charset="utf-8"
+			src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+			type="text/javascript"
+		></script>
+		<script src="script.js"></script>
+	</body>
+</html>
